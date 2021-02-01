@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="jquery.watermark.min.js"></script>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+	<script type="text/javascript">
+		$(function () {
+			var inputsForm = $("#lines").find("input,textarea");
+			for (var k = 0; k < inputsForm.length; k++) {
+				$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
+			}
+		});
+	</script>
+	
+	<title>Three inputs</title>
+</head>
+<body>
+	<h1>Three inputs</h1>
+    <p>
+        <pre class="brush: xml;">
+			<form id="inputs" >
+				<input id="line-1" name="line-1" type="text" class="checkbox_text left" title="Some Text"/></br>
+				<input id="line-2" name="line-2" type="text" class="checkbox_text left" title="Some Text"/></br>
+				<input id="line-3" name="line-3" type="text" class="checkbox_text left" title="Some Text"/></br>
+			</form>
+        </pre>
+        <pre class="brush: js;">
+        $(function () {
+			var inputsForm = $("#inputs").find("input,textarea");
+			for (var k = 0; k < inputsForm.length; k++) {
+				$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
+			}
+		});
+        </pre>
+    </p>
+	<form id="lines" >
+		<input id="line-1" name="line-1" type="text" class="checkbox_text left" title="Some Text"/></br>
+		<input id="line-2" name="line-2" type="text" class="checkbox_text left" title="Some Text"/></br>
+		<input id="line-3" name="line-3" type="text" class="checkbox_text left" title="Some Text"/></br>
+	</form>
+</body>
+</html>

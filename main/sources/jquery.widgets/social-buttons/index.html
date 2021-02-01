@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="scripts/jquery.min.js"></script>
+
+		<script>
+			(function($) {
+				$(document).ready(function () {
+					$(".reg-extlogin .extlogin-provider").addClass('colorizable');
+					$(".partners .partner").addClass('colorizable');
+					$(".colorizable").not('.colorized').hover(
+						function () {
+							$(this).clone().addClass('colorized').removeClass('colorizable').appendTo($(this));
+						},
+						function () {
+							$(this).find('.colorized').fadeOut(500,function(){$(this).remove();});
+						}
+					);
+				});
+			})(jQuery);
+		</script>
+	</head>
+	<body>
+		<div style="margin:16px auto 50px auto;" class="reg-extlogin">
+			<h3>Social buttons</h3>
+			
+			<div class="b-extlogin">
+				<a href="https://www.facebook.com/dialog/oauth?client_id=274986539188690&amp;redirect_uri=http://teamo.ru/oauth/facebook&amp;scope=email,user_location,user_birthday" class="extlogin-provider fb-login  colorizable"></a>
+				<a href="https://accounts.google.com/o/oauth2/auth?client_id=958487681431.apps.googleusercontent.com&amp;redirect_uri=http://teamo.ru/oauth/google&amp;scope=https://www.google.com/m8/feeds/&amp;response_type=code" class="extlogin-provider google-login  colorizable"></a>
+				<a href="#" class="extlogin-provider tw-login tw-oauth1  colorizable"></a>
+				<a href="http://api.vkontakte.ru/oauth/authorize?client_id=2307503&amp;redirect_uri=http://teamo.ru/oauth/vkontakte&amp;scope=SETTINGS&amp;response_type=code" class="extlogin-provider vk-login  colorizable"></a>
+				<a href="https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=b6c3e1f86a9141fba3791bc88b09e91b" class="extlogin-provider ya-login  colorizable"></a>
+				<a href="https://connect.mail.ru/oauth/authorize?client_id=617162&amp;response_type=code&amp;redirect_uri=http://teamo.ru/oauth/mailru" class="extlogin-provider mailru-login  colorizable"></a>
+				<a href="http://www.odnoklassniki.ru/oauth/authorize?client_id=3829504&amp;redirect_uri=http://teamo.ru/oauth/odnoklassniki&amp;scope=VALUABLE%20ACCESS&amp;response_type=code" class="extlogin-provider odnoklassniki-login  colorizable"></a>
+				<div class="cleared"></div>
+			</div>
+		</div>
+	</body>
+</html>

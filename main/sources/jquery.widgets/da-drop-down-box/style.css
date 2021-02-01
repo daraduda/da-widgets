@@ -1,0 +1,19 @@
+.styled {
+	width: 290px;
+}
+
+span.customStyleSelectBox {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url("../core/images/dropdown_bg.png");
+	width: 276px;
+	height: 29px;
+	color: #000000;
+	padding: 0 7px;
+	line-height: 29px;
+}
+
+.customStyleSelectBoxInner {
+	background:url("../core/images/dropdown_arrow.png") no-repeat center right;
+	margin-top: 1px;
+}

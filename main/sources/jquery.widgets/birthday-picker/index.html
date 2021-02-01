@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="bday-picker.min.js"></script>
+	<script type="text/javascript" src="jquery.dropdownmenu.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+			$("#datepicker").birthdaypicker({
+				futureDates: true,
+				maxYear: 2020,
+				maxAge: 75,
+				defaultDate: "10-17-1980"
+			});
+			
+			$('select.styled').customStyle();
+        });
+    </script>
+	
+    <link type="text/css" rel="stylesheet"  href="style.css">
+
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+    <link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title></title>
+</head>
+<body>
+
+    <h1>birthday datepicker</h1>
+    <pre class="brush: xml;">
+		<div class="picker" id="date-picker"></div>
+    </pre>
+    <pre class="brush: js;">
+		$(document).ready(function() {
+			$("#date-picker").birthdaypicker({
+				futureDates: true,
+				maxYear: 2020,
+				maxAge: 75,
+				defaultDate: "10-17-1980"
+			});
+			
+			$('select.styled').customStyle();
+        });
+    </pre>
+	
+	<div class="picker" id="datepicker"></div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fieldset.border {
+	padding: 0 10px;
+	border: 2px solid !important;
+	margin: 0 5px 5px 0;
+	width: 250px;
+	height: 220px;
+}
+
+legend.box {
+	font-size: 12px;
+	font-weight: bold;
+	width: auto;
+	padding: 0 3px 8px;
+}
+
+.menu ul {
+	margin-left: -16px;
+}
+
+.menu ul li {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+.menu ul li:first-child {
+	position: relative;
+}
+
+.menu ul li:first-child i {
+	position: absolute;
+	left: -20px;
+	top: 0px;
+	font-size: 18px;
+}
+
+.menu ul li:first-child a {
+	color: #000;
+}
+
+.cols {
+	column-gap: 0.6%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tile {
+	height: 230px;
+	width: 260px;
+}
+
+.navbar-nav.flex-direction {
+	flex-direction: inherit !important;
+}
+
+.navbar-nav.flex-direction .nav-link {
+	color: #0366d6 !important;
+	display: inline-block;
+}
+
+.display-n {
+	display: none;
+}
+
+.padding-t-15px {
+	padding-top: 15px;
+}
+
+
+
+
+
+
+table, tr, td, th {
+	border-collapse: collapse;
+	font-size: 15px;
+	text-align: center;
+}
+
+tbody, tr, td:first-child {
+	text-align: left !important;
+}
+
+td:nth-child(1) {
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 220px;
+	cursor: pointer;
+}
+
+.ceg i {
+	font-size: 26px;
+	vertical-align: sub;
+	text-align: right;
+	width: 20px;
+	padding-right: 4px;
+}
+
+.ul-variant li {
+	display: inline-block;
+	padding-right: 50px;
+}
+
+
+
+
+.user-profile {
+	border: 1px solid #10819A;
+	padding: 6px 7px;
+	border-radius: 20px;
+	background: #10819A;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	width: 32px;
+	height: 32px;
+	font-size: 12px;
+}
+
+#user-profile .modal-dialog {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+}
+
+.user-profile:hover {
+		color: #fff;
+		background: #00b4dc;
+		text-decoration: none;
+	}
+
+.modal-content.user-profile-wrapper {
+	background: #10819A;
+	color: #ffffff;
+	border-radius: 0;
+	border-width: 0;
+	width: 370px;
+}
+
+.user-profile-wrapper .modal-header .close {
+	color: #ffffff;
+	text-shadow: 0 0 black;
+	font-weight: normal;
+	opacity: 1;
+	padding-right: 30px !important;
+}
+
+.user-profile-wrapper .modal-header .close:focus {
+	outline: 0px;
+}
+
+.user-profile-wrapper .modal-header,
+.user-profile-wrapper .modal-footer {
+	border-width: 0;
+}
+
+.user-profile-wrapper .body-title {
+	padding: 50px 20px 40px 20px;
+}
+
+.user-profile-wrapper .body-title-icon {
+	border: 1px solid #00b4dc;
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	border-radius: 20px;
+	background: #00b4dc;
+	margin-right: 15px;
+}
+
+.user-profile-wrapper .body-title {
+	display: flex;
+}
+
+.user-profile-wrapper .body-title-text {
+	margin-top: -4px;
+}
+
+.user-profile-wrapper .body-title-text .top {
+	font-size: 18px;
+}
+
+.user-profile-wrapper .body-title-text .bottom {
+	font-size: 14px;
+}
+
+.user-profile-wrapper .description {
+	font-size: 14px;
+	padding: 70px 0 20px 0;
+}
+
+.user-profile-wrapper .description {
+	font-size: 14px;
+	padding: 70px 0 30px 0;
+}
+
+.user-profile-wrapper .drop-down {
+	background: #10819A;
+	color: #fff;
+	font-size: 14px;
+	border-color: #10819A;
+	border-bottom-color: #00b4dc;
+	margin-bottom: 30px;
+	width: 270px;
+}
+
+.user-profile-wrapper select:hover {
+	background: #3494a9 !important;
+}
+
+.user-profile-wrapper select:focus {
+	background: #3494a9 !important;
+	outline: snow;
+}
+
+.user-profile-wrapper option {
+	background: #10819A !important;
+}
+
+.user-profile-wrapper .modal-footer {
+	margin-top: 50px;
+	justify-content: flex-start;
+	padding: 20px 0 50px;
+	position: absolute;
+	bottom: 0;
+}
+
+.user-profile-wrapper .modal-footer .btn.save {
+	border: 1px solid #00b4dc;
+	background: #00b4dc;
+	color: #fff;
+	border-radius: 0;
+	min-width: 100px;
+}
+
+.user-profile-wrapper .modal-footer .btn-cancel {
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 0;
+	min-width: 100px;
+	margin-left: 10px;
+}
+
+.tab-content {
+	color: #000;
+	padding: 5px
+}
+
+.nav-tabs > li > a.active {
+	border-bottom: 2px solid #00b4dc;
+	color: #282c2f;
+}
+
+.nav-tabs > li > a {
+	border: medium none;
+	color: #bdc8d4;
+}
+
+.nav-tabs > li > a:hover {
+	text-decoration: none;
+}
+
+.tab-space {
+	width: 90px;
+	display: inline-block;
+}

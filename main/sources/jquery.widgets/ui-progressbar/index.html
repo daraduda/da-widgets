@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.progressbar.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $( "#progressbar" ).progressbar({
+                value: 37
+            });
+        });
+    </script>
+    
+    <link type="text/css" rel="stylesheet"  href="../core/lib/ui/css/ui-lightness/jquery-ui-1.8.16.custom.css">
+    <link type="text/css" rel="stylesheet"  href="style.css">
+
+
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+    <link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    
+    <title>Progressbar</title>
+</head>
+<body>
+    <h1>Progressbar</h1>
+    <p>
+        <pre class="brush: xml;">
+            <div id="progress-bar-test"></div>
+        </pre>
+        <pre class="brush: js;">
+            $(function() {
+            $( "#progressbar-test" ).progressbar({
+                value: 37
+            });
+        });
+        </pre>
+    </p>
+    <div id="progress-bar"></div>
+</body>
+</html>

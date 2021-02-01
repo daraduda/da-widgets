@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+	<title>Inventory Browser Tree</title>
+	<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="js/browser.tree.js"></script>
+
+	<link href="css/style.css" type="text/css" rel="stylesheet" />	
+</head>
+<body>
+	<div class="content">
+		<div class="header">
+			<div class="title">Vehicle browser</div>
+		</div>
+		
+		<div class="tab-container">
+			<div class="tab new selected" onclick="javascript:changeSelectedTab('new');">
+				<div class="tab-inner">
+					<a href="#">New</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+
+			<div class="tab used" onclick="javascript:changeSelectedTab('used');">
+				<div class="tab-inner">
+					<a href="#">Used</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+
+			<div class="tab cpo" onclick="javascript:changeSelectedTab('cpo');">
+				<div class="tab-inner">
+					<a href="#">Certified</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+		</div>
+
+		<div class="browse-tree-content">
+			<div class="content-links new">
+				<a href="#">Mercedes-Benz-New (50)</a> <br />
+				<a href="#">C-Class-New (8)</a> <br />
+				<a href="#">CL-Class-New (7)</a> <br />
+				<a href="#">CLS-Class-New (7)</a> <br />
+				<a href="#">E-Class-New (7)</a> <br />
+				<a href="#">G-Class-New (7)</a> <br />
+				<a href="#">GL-Class-New (7)</a> <br />
+				<a href="#">GW-Class-New (7)</a> <br />
+				<a href="#">GD-Class-New (7)</a> <br />
+				<a href="#">GP-Class-New (7)</a> <br />
+				<a href="#">CLK-Class-New (7)</a> <br />
+			</div>
+
+			<div class="content-links used" style="display:none;">
+				<a href="#">Mercedes-Benz-Used (50)</a> <br />
+				<a href="#">C-Class-Used (8)</a> <br />
+				<a href="#">CL-Class-Used (7)</a> <br />
+				<a href="#">CLS-Class-Used (7)</a> <br />
+				<a href="#">E-Class-Used (7)</a> <br />
+				<a href="#">G-Class-Used (7)</a> <br />
+				<a href="#">GL-Class-Used (7)</a> <br />
+				<a href="#">GW-Class-Used (7)</a> <br />
+				<a href="#">GD-Class-Used (7)</a> <br />
+				<a href="#">GP-Class-Used (7)</a> <br />
+				<a href="#">CLK-Class-Used (7)</a> <br />
+			</div>
+
+			<div class="content-links cpo" style="display:none;">
+				<a href="#">Mercedes-Benz-CPO(50)</a> <br />
+				<a href="#">C-Class-CPO (8)</a> <br />
+				<a href="#">CL-Class-CPO (7)</a> <br />
+				<a href="#">CLS-Class-CPO (7)</a> <br />
+				<a href="#">E-Class-CPO (7)</a> <br />
+				<a href="#">G-Class-CPO (7)</a> <br />
+				<a href="#">GL-Class-CPO (7)</a> <br />
+				<a href="#">GW-Class-CPO (7)</a> <br />
+				<a href="#">GD-Class-CPO (7)</a> <br />
+				<a href="#">GP-Class-CPO (7)</a> <br />
+				<a href="#">CLK-Class-CPO (7)</a> <br />
+			</div>
+
+		</div>
+	</div>
+
+	<br />
+	<br />
+	<br />
+
+	<div class="content-three">
+		<div class="header">
+			<div class="title">BROWSE TREE</div>
+		</div>
+		
+		<div class="tab-container">
+			<div class="tab new selected" onclick="javascript:changeSelectedTab('new');">
+				<div class="tab-inner">
+					<a href="#">NEW</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+
+			<div class="tab used" onclick="javascript:changeSelectedTab('used');">
+				<div class="tab-inner">
+					<a href="#">USED</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+
+			<div class="tab cpo" onclick="javascript:changeSelectedTab('cpo');">
+				<div class="tab-inner">
+					<a href="#">CERTIFIED</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+		</div>
+
+		<div class="browse-tree-content-three new">
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-New (50)</a> <br />
+				<a href="#">C-Class-New (8)</a> <br />
+				<a href="#">CL-Class-New (7)</a> <br />
+				<a href="#">CLS-Class-New (7)</a> <br />
+				<a href="#">E-Class-New (7)</a> <br />
+				<a href="#">G-Class-New (7)</a> <br />
+				<a href="#">GL-Class-New (7)</a> <br />
+				<a href="#">GW-Class-New (7)</a> <br />
+				<a href="#">GD-Class-New (7)</a> <br />
+				<a href="#">GP-Class-New (7)</a> <br />
+				<a href="#">CLK-Class-New (7)</a> <br />
+			</div>
+
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-New (50)</a> <br />
+				<a href="#">C-Class-New (8)</a> <br />
+				<a href="#">CL-Class-New (7)</a> <br />
+				<a href="#">CLS-Class-New (7)</a> <br />
+				<a href="#">E-Class-New (7)</a> <br />
+				<a href="#">G-Class-New (7)</a> <br />
+				<a href="#">GL-Class-New (7)</a> <br />
+				<a href="#">GW-Class-New (7)</a> <br />
+				<a href="#">GD-Class-New (7)</a> <br />
+				<a href="#">GP-Class-New (7)</a> <br />
+				<a href="#">CLK-Class-New (7)</a> <br />
+			</div>
+
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-New (50)</a> <br />
+				<a href="#">C-Class-New (8)</a> <br />
+				<a href="#">CL-Class-New (7)</a> <br />
+				<a href="#">CLS-Class-New (7)</a> <br />
+				<a href="#">E-Class-New (7)</a> <br />
+				<a href="#">G-Class-New (7)</a> <br />
+				<a href="#">GL-Class-New (7)</a> <br />
+				<a href="#">GW-Class-New (7)</a> <br />
+				<a href="#">GD-Class-New (7)</a> <br />
+				<a href="#">GP-Class-New (7)</a> <br />
+				<a href="#">CLK-Class-New (7)</a> <br />
+			</div>
+		</div>
+			
+		<div class="browse-tree-content-three used" style="display: none;">
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-Used (50)</a> <br />
+				<a href="#">C-Class-Used (8)</a> <br />
+				<a href="#">CL-Class-Used (7)</a> <br />
+				<a href="#">CLS-Class-Used (7)</a> <br />
+				<a href="#">E-Class-Used (7)</a> <br />
+				<a href="#">G-Class-Used (7)</a> <br />
+				<a href="#">GL-Class-Used (7)</a> <br />
+				<a href="#">GW-Class-Used (7)</a> <br />
+				<a href="#">GD-Class-Used (7)</a> <br />
+				<a href="#">GP-Class-Used (7)</a> <br />
+				<a href="#">CLK-Class-Used (7)</a> <br />
+			</div>
+
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-Used (50)</a> <br />
+				<a href="#">C-Class-Used (8)</a> <br />
+				<a href="#">CL-Class-Used (7)</a> <br />
+				<a href="#">CLS-Class-Used (7)</a> <br />
+				<a href="#">E-Class-Used (7)</a> <br />
+				<a href="#">G-Class-Used (7)</a> <br />
+				<a href="#">GL-Class-Used (7)</a> <br />
+				<a href="#">GW-Class-Used (7)</a> <br />
+				<a href="#">GD-Class-Used (7)</a> <br />
+				<a href="#">GP-Class-Used (7)</a> <br />
+				<a href="#">CLK-Class-Used (7)</a> <br />
+			</div>
+
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-Used (50)</a> <br />
+				<a href="#">C-Class-Used (8)</a> <br />
+				<a href="#">CL-Class-Used (7)</a> <br />
+				<a href="#">CLS-Class-Used (7)</a> <br />
+				<a href="#">E-Class-Used (7)</a> <br />
+				<a href="#">G-Class-Used (7)</a> <br />
+				<a href="#">GL-Class-Used (7)</a> <br />
+				<a href="#">GW-Class-Used (7)</a> <br />
+				<a href="#">GD-Class-Used (7)</a> <br />
+				<a href="#">GP-Class-Used (7)</a> <br />
+				<a href="#">CLK-Class-Used (7)</a> <br />
+			</div>
+		</div>
+
+		<div class="browse-tree-content-three cpo" style="display: none;">
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-CPO (50)</a> <br />
+				<a href="#">C-Class-CPO (8)</a> <br />
+				<a href="#">CL-Class-CPO (7)</a> <br />
+				<a href="#">CLS-Class-CPO (7)</a> <br />
+				<a href="#">E-Class-CPO (7)</a> <br />
+				<a href="#">G-Class-CPO (7)</a> <br />
+				<a href="#">GL-Class-CPO (7)</a> <br />
+				<a href="#">GW-Class-CPO (7)</a> <br />
+				<a href="#">GD-Class-CPO (7)</a> <br />
+				<a href="#">GP-Class-CPO (7)</a> <br />
+				<a href="#">CLK-Class-CPO (7)</a> <br />
+			</div>
+
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-CPO (50)</a> <br />
+				<a href="#">C-Class-CPO (8)</a> <br />
+				<a href="#">CL-Class-CPO (7)</a> <br />
+				<a href="#">CLS-Class-CPO (7)</a> <br />
+				<a href="#">E-Class-CPO (7)</a> <br />
+				<a href="#">G-Class-CPO (7)</a> <br />
+				<a href="#">GL-Class-CPO (7)</a> <br />
+				<a href="#">GW-Class-CPO (7)</a> <br />
+				<a href="#">GD-Class-CPO (7)</a> <br />
+				<a href="#">GP-Class-CPO (7)</a> <br />
+				<a href="#">CLK-Class-CPO (7)</a> <br />
+			</div>
+
+			<div class="content-links-three left">
+				<a href="#">Mercedes-Benz-CPO (50)</a> <br />
+				<a href="#">C-Class-CPO (8)</a> <br />
+				<a href="#">CL-Class-CPO (7)</a> <br />
+				<a href="#">CLS-Class-CPO (7)</a> <br />
+				<a href="#">E-Class-CPO (7)</a> <br />
+				<a href="#">G-Class-CPO (7)</a> <br />
+				<a href="#">GL-Class-CPO (7)</a> <br />
+				<a href="#">GW-Class-CPO (7)</a> <br />
+				<a href="#">GD-Class-CPO (7)</a> <br />
+				<a href="#">GP-Class-CPO (7)</a> <br />
+				<a href="#">CLK-Class-CPO (7)</a> <br />
+			</div>
+		</div>
+			
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

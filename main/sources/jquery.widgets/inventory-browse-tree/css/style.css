@@ -1,0 +1,171 @@
+.content {
+	width: 600px;
+	height: 270px;
+  
+  	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ff9900;
+}
+
+.content {
+	width: 290px;
+	height: 270px;
+  
+  	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ff9900;
+}
+
+.content-three {
+	width: 600px;
+	height: 270px;
+  
+  	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ff9900;
+}
+
+.header {
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	height: 43px;
+	
+  	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ff9900;
+}
+
+.header .title {
+	margin-top: 10px;
+}
+
+.tab-container {
+	margin-top: 10px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.tab {
+    margin-left: 10px;
+	cursor: pointer;
+    float: left;
+    text-align: center !important;
+}
+
+.tab-inner {
+    background-color: #E3E3E3;
+    width: 82px;
+    padding: 7px 0px;
+}
+
+.tab-inner:hover {
+    background-color: #e2a129;
+    width: 82px;
+    padding: 7px 0px;
+}
+
+.tab-container a {
+    color: #009900;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tab-container a:hover {
+    color: #333333;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.selected .tab-inner {
+	background-color: #009900;
+    color: #FFFFFF;	
+}
+
+.selected .arrow {
+  	border-color: #009900 transparent;
+    border-style: solid solid none;
+    border-width: 7px 7px medium;
+    height: 0;
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.selected .tab-inner a {
+    color: #ffffff;
+}
+
+.selected .tab-inner a:hover {
+	color: #333333;
+}
+
+.browse-tree-content {
+	overflow: auto;
+	width: 265px;
+	height: 150px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.browse-tree-content {
+	text-align: center;
+	font-family: "Arial";
+	font-size: 12px;
+	width: 265px;
+	height: 150px;
+	margin-left: 10px;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+.browse-tree-content-three {
+	overflow: auto;
+	width: 580px;
+	height: 150px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.browse-tree-content-three {
+	text-align: center;
+	font-family: "Arial";
+	font-size: 12px;
+	width: 580px;
+	height: 150px;
+	margin-left: 10px;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+.content-links {
+	width: 170px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 12px;
+}
+
+.content-links-three {
+	width: 170px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 12px;
+}
+
+.browse-tree-content a {
+	color: #000000;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	claer: both;
+}
+

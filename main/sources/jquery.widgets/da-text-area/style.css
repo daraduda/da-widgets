@@ -1,0 +1,10 @@
+.textarea {
+    background: url("../core/images/textarea.png") no-repeat;
+    width: 283px;
+    height: 90px;
+    font-size: 14px;
+	font-family: Arial;
+	border: 0;
+	padding: 5px;
+	resize: none;
+}

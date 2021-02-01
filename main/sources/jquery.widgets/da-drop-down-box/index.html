@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Dropdown box</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="jquery.dropdownmenu.js"></script>
+	
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+	<script type="text/javascript">
+        $(function() {
+            $(".styled").customStyle();
+        });
+    </script>
+</head>
+<body>
+	<h1>Dropdown box</h1>
+    <p>
+        <pre class="brush: xml;">
+			<select class="styled_select">
+				<option>One</option>
+				<option>Two</option>
+				<option>Three</option>
+			</select>
+        </pre>
+		<pre class="brush: js;">
+            $(function() {
+				$(".styled_select").customStyle();
+			});
+        </pre>
+    </p>
+
+	<select class="styled">
+		<option>One</option>
+		<option>Two</option>
+		<option>Three</option>
+	</select>	
+</body>
+</html>

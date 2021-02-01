@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+		<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+		<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<title>Image with items</title>
+	</head>
+	<body>
+		<h1>Image with Items</h1>
+			<p>
+			<pre class="brush: xml;">            
+				<div class="main-div">
+					<img src="images/6.jpg" />
+					<section class="sub-div">
+						<div>
+						<div class="b_categories">
+							<span class="br-icon-activity"></span>
+							<p class="category_text">Активный отдых</p>
+						</div>
+						<div class="b_categories">
+							<span class="br-icon-art"></span>
+							<p class="category_text">Наука и искусство</p>
+						</div>
+						<div class="b_categories">
+							<span class="br-icon-urban"></span>
+							<p class="category_text">Городская среда</p>
+						</div>
+						<section class="characteristics">
+							<div class="br-icon-bus"></div>
+							<div class="br-icon-evening"></div>
+							<div class="br-icon-cash"></div>
+						</section>
+						</div>
+						<button class="favorite-button">
+							<i class="b-favorite_icon"></i>
+							<span>В Избранное</span>
+						</button>
+					</section>
+					<div class="bottom">Театральная среда Мадрида</div>
+				</div>
+			</pre>
+			<pre class="brush: js;">
+				$(document).ready(function() {
+					$(".main-div").hover(function () {
+						$(this).children('.sub-div').fadeIn();
+					},
+						function() {
+							$(this).children('.sub-div').fadeOut();
+					});
+				});
+			</pre>
+		</p>
+		<div>
+			<div class="main-div">
+					<img src="images/6.jpg" />
+					<section class="sub-div">
+						<div>
+						<div class="b_categories">
+							<span class="br-icon-activity"></span>
+							<p class="category_text">Активный отдых</p>
+						</div>
+						<div class="b_categories">
+							<span class="br-icon-art"></span>
+							<p class="category_text">Наука и искусство</p>
+						</div>
+						<div class="b_categories">
+							<span class="br-icon-urban"></span>
+							<p class="category_text">Городская среда</p>
+						</div>
+						<section class="characteristics">
+							<div class="br-icon-bus"></div>
+							<div class="br-icon-evening"></div>
+							<div class="br-icon-cash"></div>
+						</section>
+						</div>
+						<button class="favorite-button">
+							<i class="b-favorite_icon"></i>
+							<span>В Избранное</span>
+						</button>
+					</section>
+					<div class="bottom">Театральная среда Мадрида</div>
+				</div>
+		</div>
+	</body>
+
+    <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+	<script src="scripts/menu.js"></script>
+
+</html>

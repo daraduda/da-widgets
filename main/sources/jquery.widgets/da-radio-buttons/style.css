@@ -1,0 +1,58 @@
+.da_ui-select-radio-list {
+    width:636px;
+    padding:10px 0 0 0;
+}
+
+.da_ui-select-radio-list li {
+    list-style:none;
+    display:block;
+    background:url("../core/images/radio_b.png") no-repeat left center;
+    width:551px;height:38px;
+    line-height:38px;
+    font-size:12px;
+    padding:0 17px 0 68px;
+    margin-bottom:8px;
+    cursor:pointer;
+}
+
+.da_ui-select-radio-list li.da_ui-state-active {
+    background:url("../core/images/radio_b_a.png") no-repeat left center !important;
+    cursor:default;
+}
+
+.da_ui-select-radio-list li.da_ui-state-hover {
+    background:url("../core/images/radio_b_g.png") no-repeat left center;
+}
+
+ul.da_ui-select-radio-multi-list {
+    float:left;
+}
+
+.da_ui-select-radio-multi-list {
+    width:322px;
+    padding:15px 30px 0 0;
+}
+
+.da_ui-select-radio-last{
+    padding-right:0px;
+}
+
+.da_ui-select-radio-multi-list li {
+    list-style:none;
+    display:block;
+    background:url("../core/images/checkbox_b.png") no-repeat left center;
+    width:322px;height:37px;
+    line-height:37px;
+    font-size:12px;
+    padding:0 17px 0 68px;
+    margin-bottom:8px;
+    cursor:pointer;
+}
+
+.da_ui-select-radio-multi-list li.da_ui-state-active {
+    background:url("../core/images/checkbox_b_a.png") no-repeat left center !important;
+}
+
+.da_ui-select-radio-multi-list li.da_ui-state-hover {
+	background:url("../core/images/checkbox_b_g.png") no-repeat left center;
+}

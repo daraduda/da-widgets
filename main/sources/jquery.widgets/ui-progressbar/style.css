@@ -1,0 +1,24 @@
+#progress-bar {
+    -moz-border-radius: 0px;
+    -webkit-border-bottom: 0px;
+    -khtml-border-bottom: 0px;
+    border-radius:0px;
+    border:0px;
+    width:185px;height:21px;
+    background:none;
+    background:url("../core/images/progress_men_1.png") repeat-x;
+}
+
+#progress-bar * {
+    -moz-border-radius: 0px;
+    -webkit-border-bottom: 0px;
+    -khtml-border-bottom: 0px;
+    border-radius:0px;
+    border:0px;
+}
+
+#progress-bar .ui-progressbar-value {
+    background:none;
+    background:url("../core/images/progress_men_0.png") repeat-x;
+    height:21px;
+}

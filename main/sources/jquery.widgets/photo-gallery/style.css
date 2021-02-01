@@ -1,0 +1,43 @@
+.smile {
+	background: url("../core/images/smile.png") no-repeat;
+	height: 30px;
+    width: 250px;
+	margin-top: 10px;
+	float: left;
+}
+
+.smile a 
+{
+	position: relative;
+	margin-left: 40px;
+	font-family: arial,sans-serif;
+	text-decoration: none;
+	color: #000;
+}
+
+.smile .smile_text {
+	margin-top: 10px;
+	float: left;
+}
+
+.plus {
+	background: url("../core/images/plus.png") no-repeat;
+	height: 33px;
+    width: 125px;
+	margin-top: 10px;
+	float: right;
+}
+
+.plus a 
+{
+	position: relative;
+	margin-left: 40px;
+	font-family: arial,sans-serif;
+	text-decoration: none;
+	color: #000;
+}
+
+.plus .plus_text {
+	margin-top: 10px;
+	float: right;
+}

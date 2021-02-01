@@ -1,0 +1,74 @@
+.da_ui-select-multi-buttons-list {
+    margin:0 0 0 20px;
+}
+
+.da_ui-select-multi-buttons-list li {
+    list-style:none;
+    display:block;
+    height:35px;
+    width:334px;
+    padding:0px;
+    margin:0 0 14px 0;
+    cursor:pointer;
+}
+
+.number {
+    float:left;
+    background:url("../core/images/number_interest.png");
+    width:36px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    margin:0 10px 0 0;
+    color:#6CA47D;
+}
+
+.item-text {
+    float:left;
+    background:url("../core/images/button_interest.png");
+    width:268px;
+    height:18px;
+    padding:0 10px 0 10px;
+    margin:8px 0 0 0;
+    font-size:11px;
+    line-height:18px;
+}
+
+.menu-tests {
+    width:293px;
+}
+
+.menu-tests .t {
+    background:url("../core/images/menu_interest_t.png");
+    width:293px;
+    height:31px;
+}
+
+.menu-tests .rep {
+    background:url("../core/images/menu_interest_r.png");
+    width:293px;
+}
+
+.menu-tests .b {
+    background:url("../core/images/menu_interest_b.png");
+    width:293px;
+    height:34px;
+}
+
+.da_ui-select-multi-buttons-menu-list ul {
+    padding:0 40px;
+    width:213px;
+    overflow:hidden;
+    margin:0px;
+}
+
+.da_ui-select-multi-buttons-menu-list ul li {
+    list-style:none;
+    display:block;
+    font-size:11px;
+    cursor:pointer;
+}
+
+.da_ui-select-multi-buttons-menu-list ul li.da_ui-state-active {
+    color:#9a9a9a;
+}

@@ -1,0 +1,229 @@
+﻿@font-face {
+font-family: berry-icons;
+	font-family: 'berry-icons';
+	src: local('berry-icons'),
+	url('../fonts/berry-icons.ttf');}
+
+.main-div {
+	width: 240px;
+	position: relative;
+	cursor: pointer;
+}
+
+.sub-div {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 10px;
+	left: 10px;
+	width: 220px;
+	margin-top: 2px;
+}
+
+.favorite-button {
+	background-color: #46A9EB;
+	border: 0 solid #46A9EB;
+	color: #FFFFFF;
+	display: inline-block;
+	font-family: Verdana,sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	min-height: 48px;
+	padding: 0;
+	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+	width: 100%;
+	position: absolute;
+	margin-top: 10px;
+	height: 72px;
+}
+
+.favorite-button:hover {
+	background-color: #3D93CC;
+	border: 0 solid #3D93CC;
+	cursor: pointer;
+}
+
+.bottom {
+	color: #FFFFFF;
+	display: table-cell;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: top;
+	width: 200px;
+	position: absolute;
+	top: 250px;
+	left: 10px;
+	font-family: 'Helvetica',sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.2em;
+}
+
+.b_categories {
+	display: inline-block;
+	text-align: center;
+	width: 68px;
+	height: 80px;
+	color: #FFFFFF;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class^="br-icon-"],
+[class*=" br-icon-"] {
+	font-size: 24px;
+}
+
+.br-icon-accomodation:before,
+.br-icon-activity:before,
+.br-icon-all:before,
+.br-icon-allday:before,
+.br-icon-art:before,
+.br-icon-bear:before,
+.br-icon-bicycle:before,
+.br-icon-br:before,
+.br-icon-bus:before,
+.br-icon-car:before,
+.br-icon-cash:before,
+.br-icon-cheap:before,
+.br-icon-delete:before,
+.br-icon-edit-dragger:before,
+.br-icon-edit:before,
+.br-icon-evening:before,
+.br-icon-expensive:before,
+.br-icon-family:before,
+.br-icon-filter:before,
+.br-icon-food:before,
+.br-icon-free:before,
+.br-icon-galka:before,
+.br-icon-gallery:before,
+.br-icon-health:before,
+.br-icon-history:before,
+.br-icon-link:before,
+.br-icon-lock:before,
+.br-icon-logo-for-bg:before,
+.br-icon-map:before,
+.br-icon-moderator:before,
+.br-icon-moped:before,
+.br-icon-morning:before,
+.br-icon-nature:before,
+.br-icon-night-life:before,
+.br-icon-night:before,
+.br-icon-nightlife:before,
+.br-icon-nocategory:before,
+.br-icon-noon:before,
+.br-icon-photo:before,
+.br-icon-plus:before,
+.br-icon-public:before,
+.br-icon-reload:before,
+.br-icon-relogin:before,
+.br-icon-remove:before,
+.br-icon-search:before,
+.br-icon-setting:before,
+.br-icon-share:before,
+.br-icon-shopping:before,
+.br-icon-star:before,
+.br-icon-strelka:before,
+.br-icon-text:before,
+.br-icon-title:before,
+.br-icon-transport:before,
+.br-icon-upload:before,
+.br-icon-urban:before,
+.br-icon-view:before,
+.br-icon-walking:before,
+.b-favorite_icon:before {
+	display: inline-block;
+	font-family: "berry-icons";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+
+.br-icon-activity:before {
+	content: "\f101";
+}
+
+.br-icon-art:before {
+	content: "\f104";
+}
+
+.br-icon-urban:before {
+	content: "\f136";
+}
+
+.br-icon-bus:before {
+	content: "\f108";
+}
+
+.br-icon-evening:before {
+	content: "\f10e";
+}
+
+.br-icon-cash:before {
+	content: "\f125";
+}
+
+.b-favorite_icon:before {
+	content: "\f130";
+}
+
+.favorite-button:hover .b-favorite_icon,
+.favorite-button:active .b-favorite_icon {
+	color: #FAE1A4;
+}
+
+.category_text {
+	font-size: 10px;
+	line-height: 1em;
+	text-align: center;
+	width: 68px;
+	position: absolute;
+	margin: 0 0 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.characteristics [class^="br-icon-"]:before,
+.characteristics[class*="br-icon-"]:before {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	font-size: 24px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.characteristics {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: -o-box;
+	display: box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: static;
+	margin-bottom: 10px;
+	font-size: 30px;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	font-size: 30px;
+	margin-bottom: 10px;
+	line-height: 48px;
+}

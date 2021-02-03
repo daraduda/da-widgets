@@ -7,14 +7,8 @@
     <script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.core.min.js"></script>
     <script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.widget.min.js"></script>
     <script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.progressbar.min.js"></script>
+    <script type="text/javascript" src="progressbar.js"></script>
 
-    <script type="text/javascript">
-        $(function() {
-            $( "#progressbar" ).progressbar({
-                value: 37
-            });
-        });
-    </script>
     
     <link type="text/css" rel="stylesheet"  href="../core/lib/ui/css/ui-lightness/jquery-ui-1.8.16.custom.css">
     <link type="text/css" rel="stylesheet"  href="style.css">
@@ -34,16 +28,16 @@
     <h1>Progressbar</h1>
     <p>
         <pre class="brush: xml;">
-            <div id="progress-bar-test"></div>
+            <div id="progressbar-test"></div>
         </pre>
         <pre class="brush: js;">
             $(function() {
-            $( "#progressbar-test" ).progressbar({
-                value: 37
+                $( "#progressbar-test" ).progressbar({
+                    value: 37
+                });
             });
-        });
         </pre>
     </p>
-    <div id="progress-bar"></div>
+    <div id="progressbar"></div>
 </body>
 </html>

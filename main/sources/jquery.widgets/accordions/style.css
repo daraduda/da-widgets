@@ -1,0 +1,17 @@
+﻿#accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+
+#accordion h3{
+	background-color: rgb(226, 222, 222);
+}
+
+#accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	overflow: auto;
+}

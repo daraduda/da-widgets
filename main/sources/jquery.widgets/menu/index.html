@@ -11,8 +11,10 @@
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
 
 	<title>Menu</title>
@@ -20,26 +22,28 @@
 <body>
 	<h1>Menu</h1>
 	
-    <p>
+	<ul class="menu"> 
+		<li><a class="has-child" href="level-a#">Level A</a></li>
+		<li><a class="has-child" href="level-b#">Level B</a></li>
+		<li><a class="has-child" href="level-c#">Level C</a></li>
+		<li><a class="has-child" href="level-d#">Level D</a></li>
+		<li><a class="has-child" href="level-e#">Level E</a></li>
+		<li><a class="has-child" href="#all">All</a></li>
+	</ul>
+
+	<h1>How to use it?</h1>
+	
+	<p>
         <pre class="brush: xml;">
 			<ul class="menu"> 
-				<li><a class="has-child" href="#">A</a></li>
-				<li><a class="has-child" href="#">B</a></li>
-				<li><a class="has-child" href="#">C</a></li>
-				<li><a class="has-child" href="#">D</a></li>
-				<li><a class="has-child" href="#">E</a></li>
-				<li><a class="has-child" href="#">All</a></li>
+				<li><a class="has-child" href="level-a#">Level A</a></li>
+				<li><a class="has-child" href="level-b#">Level B</a></li>
+				<li><a class="has-child" href="level-c#">Level C</a></li>
+				<li><a class="has-child" href="level-d#">Level D</a></li>
+				<li><a class="has-child" href="level-e#">Level E</a></li>
+				<li><a class="has-child" href="all#">All</a></li>
 			</ul>
         </pre>
     </p>
-	
-	<ul class="menu"> 
-		<li><a class="has-child" href="#">A</a></li>
-		<li><a class="has-child" href="#">B</a></li>
-		<li><a class="has-child" href="#">C</a></li>
-		<li><a class="has-child" href="#">D</a></li>
-		<li><a class="has-child" href="#">E</a></li>
-		<li><a class="has-child" href="#">All</a></li>
-	</ul>	
 </body>
 </html>

@@ -12,7 +12,6 @@ ul {
 	border-radius: 15px;
 	width: 300px;
 	background-color: #666;
-	behavior: url(ie-css3.htc);
 }
 
 li {

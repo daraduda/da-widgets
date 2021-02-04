@@ -1,9 +1,16 @@
+body {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 45px;
+	font-family: Helvetica;
+}
+
 #content {
 	border-color: black;
-	text-align: center;
+	text-align: left;
 	height: 100%;
-	margin-top: 50px;
-	font-size: x-large;
+	padding: 0 0 0 0;
+	font-weight: 600;
 }
 
 #content a {

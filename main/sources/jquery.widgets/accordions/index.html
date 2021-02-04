@@ -2,9 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link type="text/css" rel="stylesheet" href="style.css"/>
 	
 	<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="../core/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="accordion.js"></script>
 	
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
@@ -13,64 +16,73 @@
 
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+	
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
-	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-	<script>
-	 $(function() {
-		$( "#accordion" ).accordion();
-	  });
-	</script>
+	<title>Accordion</title>
 </head>
 <body>
-	<div id="accordion" class="ui-accordion">
-	  <h3>Section 1</h3>
+	<h1>Accordion</h1>
+	
+	<div id="accordion">
+	  <h3>News</h3>
 	  <div>
-		<p>
-		Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-		ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-		amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-		odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-		</p>
+		<b>Top 10 machine learning firms for startups in 2021</b><br/><br/>
+		The compound annual growth rate for Machine Learning stands at a whopping 44.1%, as per Development stats.
+		This means the Machine learning market will reach 8.81 billion USD by 2022.
+		The pragmatic use of ML in image recognition, speech recognition, medical diagnosis, CRMS, etc.,
+		has led to startups investing in the technology.
 	  </div>
-	  <h3>Section 2</h3>
+
+	  <h3>Health</h3>
 	  <div>
-		<p>
-		Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-		purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-		velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-		suscipit faucibus urna.
-		</p>
+		<b>Top 10 IoT Healthcare Solution Providers You Can Trust in 2021</b><br/><br/>
+		The role of IoT in the healthcare industry has been transformed by top IoT healthcare solution providers.
+		IoT healthcare companies have created a path for new innovation, smarter systems and digital healthcare solutions.
+
+		As stated by the Market Insights Reports,The global IoT in healthcare market was valued at $55.5 billion in 2019.
+		The report also suggested that the market would grow at a CAGR of over 25% during the forecast period of 2019 to 2026.
+		Moreover, with the current global pandemic of COVID-19, top healthcare IoT companies are vying opportunities to further this growth and invent newer IoT healthcare solutions.
 	  </div>
-	  <h3>Section 3</h3>
+
+	  <h3>Car</h3>
 	  <div>
-		<p>
-		Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-		Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-		ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-		lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-		</p>
-		<ul>
-		  <li>List item one</li>
-		  <li>List item two</li>
-		  <li>List item three</li>
-		</ul>
+		<b>How Honda Experiments with Generative Design and Additive Manufacturing</b><br/><br/>
+		Honda, a Japanese car manufacturer has demonstrated outstanding results in their recent project 
+		intended to reduce the weight of the crankshaft and increase its fuel efficiency.
+		In order to carry out such a redesign in an effective and timely-fashioned manner,
+		the company collaborated with Autodesk and applied its software solutions, as well as various 3D-printing technologies.
 	  </div>
-	  <h3>Section 4</h3>
+
+	  <h3>People</h3>
 	  <div>
-		<p>
-		Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-		et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-		faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-		mauris vel est.
-		</p>
-		<p>
-		Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-		inceptos himenaeos.
-		</p>
+		<b>The founder’s guide to AngelList</b><br/><br/>
+		AngelList is a social network designed to connect startups with investors and vice versa.
+		The founders of it were dissatisfied with how opaque the VC world was, and found a way to increase the amount of available data.
+		The project began in partnership with just 50 volunteer investors wishing to allocate $80 million in capital and has grown to be the leading website of its kind.
+		Over the past three years more than 75% of startups that received seed funding from American investors used AngelList to make it happen.
 	  </div>
 	</div>
+
+	<h1>How to us it?</h1>
+
+	<p>
+        <pre class="brush: xml;">
+			<div id="accordion">
+				<h3>News</h3>
+				<div> Please insert any content about news.</div>
+				
+				<h3>Health</h3>
+				<div> Please insert any content about health.</div>
+				
+				<h3>Car</h3>
+				<div> Please insert any content about a car.</div>
+	
+				<h3>People</h3>
+				<div> Please insert any content about people.</div>				
+			</div>
+        </pre>
+    </p>
 </body>
 </html>

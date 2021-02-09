@@ -1,4 +1,6 @@
 (function ($) {
+	$('select.styled').customStyle();
+	
 	$.fn.extend({
 		customStyle: function (options) {
 			if (!$.browser.msie || ($.browser.msie && $.browser.version > 6)) {

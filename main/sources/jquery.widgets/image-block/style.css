@@ -2,7 +2,7 @@
 font-family: berry-icons;
 	font-family: 'berry-icons';
 	src: local('berry-icons'),
-	url('../fonts/berry-icons.ttf');}
+	url('fonts/berry-icons.ttf');}
 
 .main-div {
 	width: 240px;
@@ -164,7 +164,7 @@ font-family: berry-icons;
 }
 
 .br-icon-evening:before {
-	content: "\f10e";
+	content: "\f136";
 }
 
 .br-icon-cash:before {

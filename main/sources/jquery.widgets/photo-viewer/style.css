@@ -23,7 +23,6 @@
 .plus {
 	background: url("../core/images/plus.png") no-repeat;
 	height: 33px;
-    width: 125px;
 	margin-top: 10px;
 	float: right;
 }
@@ -31,7 +30,7 @@
 .plus a 
 {
 	position: relative;
-	margin-left: 40px;
+	margin-left: 35px;
 	font-family: arial,sans-serif;
 	text-decoration: none;
 	color: #000;

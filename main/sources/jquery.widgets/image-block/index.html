@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+
+		<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
+		<script src="menu.js"></script>
+		
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+		<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+		<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+		<title>Image block</title>
+	</head>
+	<body>
+		<h1>Image block</h1>
+
+		<p>
+			<pre class="brush: xml;">            
+				<div class="main-div">
+					<img src="images/example.jpg" />
+					<section class="sub-div">
+						<div>
+						<div class="b_categories">
+							<span class="br-icon-activity"></span>
+							<p class="category_text">Leisure</p>
+						</div>
+						<div class="b_categories">
+							<span class="br-icon-art"></span>
+							<p class="category_text">Science and art</p>
+						</div>
+						<div class="b_categories">
+							<span class="br-icon-urban"></span>
+							<p class="category_text">Urban environment</p>
+						</div>
+						<section class="characteristics">
+							<div class="br-icon-bus"></div>
+							<div class="br-icon-evening"></div>
+							<div class="br-icon-cash"></div>
+						</section>
+						</div>
+						<button class="favorite-button">
+							<i class="b-favorite_icon"></i>
+							<span>My favorites</span>
+						</button>
+					</section>
+					<div class="bottom">Theatrical environment of Madrid</div>
+				</div>
+			</pre>
+			<pre class="brush: js;">
+				$(document).ready(function() {
+					$(".main-div").hover(function () {
+						$(this).children('.sub-div').fadeIn();
+					},
+						function() {
+							$(this).children('.sub-div').fadeOut();
+					});
+				});
+			</pre>
+		</p>
+		<div>
+			<div class="main-div">
+				<img src="images/example.jpg" />
+				<section class="sub-div">
+					<div>
+					<div class="b_categories">
+						<span class="br-icon-activity"></span>
+						<p class="category_text">Leisure</p>
+					</div>
+					<div class="b_categories">
+						<span class="br-icon-art"></span>
+						<p class="category_text">Science and art</p>
+					</div>
+					<div class="b_categories">
+						<span class="br-icon-urban"></span>
+						<p class="category_text">Urban environment</p>
+					</div>
+					<section class="characteristics">
+						<div class="br-icon-bus"></div>
+						<div class="br-icon-evening"></div>
+						<div class="br-icon-cash"></div>
+					</section>
+					</div>
+					<button class="favorite-button">
+						<i class="b-favorite_icon"></i>
+						<span>My favorites</span>
+					</button>
+				</section>
+				<div class="bottom">Theatrical environment of Madrid</div>
+			</div>
+		</div>
+	</body>
+</html>

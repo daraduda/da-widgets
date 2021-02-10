@@ -3,49 +3,65 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-		<title>Demo Page: Using Progressive Enhancement to Convert a Select Box Into an Accessible jQuery UI Slider</title>
+		<title>Slider</title>
 
 		<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="../core/lib/jquery-ui-1.7.1.custom.min.js"></script>
 		<script type="text/javascript" src="../core/lib/ui/libs/jquery.ui.slider.js"></script>
+		<script type="text/javascript" src="slider.js"></script>
 
 		<link rel="stylesheet" href="css/redmond/jquery-ui-1.7.1.custom.css" type="text/css" />
-		<link rel="stylesheet" href="css/slider.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
 
-		<script type="text/javascript">
-			$(function(){
-				//demo 1
-				var abc = $('select#speed').selectToUISlider().next();
-				//fix color 
-				//fixToolTipColor();
-			});
-
-			//purely for theme-switching demo... ignore this unless you're using a theme switcher
-			//quick function for tooltip color match
-			/*function fixToolTipColor(){
-				//grab the bg color from the tooltip content - set top border of pointer to same
-				$('.ui-tooltip-pointer-down-inner').each(function(){
-					var bWidth = $('.ui-tooltip-pointer-down-inner').css('borderTopWidth');
-					var bColor = $(this).parents('.ui-slider-tooltip').css('backgroundColor')
-					$(this).css('border-top', bWidth+' solid '+bColor);
-				});	
-			}*/
-		</script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+		<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+		<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
 	</head>
 	<body>
-		<form action="#">
-			<div>
-				<select name="speed" id="speed">
-					<option value="1">&#1057;&#1086;&#1074;&#1089;&#1077;&#1084; &#1085;&#1077; &#1074;&#1072;&#1078;&#1085;&#1086;</option>
-					<option value="2">&#1055;&#1086;&#1095;&#1090;&#1080; &#1085;&#1077; &#1074;&#1072;&#1078;&#1085;&#1086;</option>
-					<option value="3" selected="selected">&#1042;&#1072;&#1078;&#1085;&#1086;</option>
-					<option value="4">&#1054;&#1095;&#1077;&#1085;&#1100; &#1074;&#1072;&#1078;&#1085;&#1086;</option>
-					<option value="5">&#1050;&#1088;&#1072;&#1081;&#1085;&#1077; &#1074;&#1072;&#1078;&#1085;&#1086;</option>
-				</select>
-				<br />
-				<br />
-				<br />
-			</div>
-		</form>
+		<h1>Slider</h1>
+
+		<div class="content"> 
+			<form action="#">
+				<div>
+					<select name="speed" id="speed">
+						<option value="1">Low</option>
+						<option value="2">Medium</option>
+						<option value="3" selected="selected">High</option>
+						<option value="4">Important</option>
+						<option value="5">Urgent</option>
+					</select>
+				</div>
+			</form>		
+		</div>
+		<br/>
+		<div>
+			<h1>How to use it?</h1> 
+			
+			<h3>Html</h3>
+			<pre class="brush: xml;">          
+				<form action="#">
+					<div>
+						<select name="speed-demo" id="speed-demo">
+							<option value="1">Low</option>
+							<option value="2">Medium</option>
+							<option value="3" selected="selected">High</option>
+							<option value="4">Important</option>
+							<option value="5">Urgent</option>
+						</select>
+					</div>
+				</form>
+			</pre>
+
+			<h3>jQuery</h3>
+			<pre class="brush: js;">
+				$(function(){
+					$('select#speed-demo').selectToUISlider();
+				});
+			</pre>
+		</div>
 	</body>
 </html>

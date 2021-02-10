@@ -21,20 +21,7 @@
 </head>
 <body>
     <h1>Custom dropdown</h1>
-    
-    <pre class="brush: xml;">
-		<select class="styled">
-			<option>Item 1</option>
-			<option>Item 2</option>
-			<option>Item 3</option>
-		</select>
-    </pre>
-    <pre class="brush: js;">
-		$(document).ready(function() {
-			$('select.styled').customStyle();
-        });
-    </pre>
-	
+    	
 	<div>
 		<select class="styled">
 			<option>Item 1</option>
@@ -49,5 +36,23 @@
 			<option>Item 10</option>
 		</select>
 	</div>
+	
+    <h1>How to use it?</h1>
+    
+    <h3>Html</h3>
+    <pre class="brush: xml;">
+		<select class="styled">
+			<option>Item 1</option>
+			<option>Item 2</option>
+			<option>Item 3</option>
+		</select>
+    </pre>
+    
+    <h3>jQuery</h3>
+    <pre class="brush: js;">
+		$(document).ready(function() {
+			$('select.styled').customStyle();
+        });
+    </pre>
 </body>
 </html>

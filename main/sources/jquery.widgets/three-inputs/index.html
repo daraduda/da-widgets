@@ -5,6 +5,7 @@
 
 	<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="jquery.watermark.min.js"></script>
+	<script type="text/javascript" src="three-inputs.js"></script>
 
 	<link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -16,40 +17,39 @@
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
 
-	<script type="text/javascript">
-		$(function () {
-			var inputsForm = $("#lines").find("input,textarea");
-			for (var k = 0; k < inputsForm.length; k++) {
-				$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
-			}
-		});
-	</script>
-	
 	<title>Three inputs</title>
 </head>
 <body>
-	<h1>Three inputs</h1>
-    <p>
-        <pre class="brush: xml;">
+	<h1>Three inputs</h1> 
+
+	<div class="content"> 
+		<form id="lines" >
+			<input id="line-1" name="line-1" type="text" class="checkbox_text left" title="Some Text"/></br>
+			<input id="line-2" name="line-2" type="text" class="checkbox_text left" title="Some Text"/></br>
+			<input id="line-3" name="line-3" type="text" class="checkbox_text left" title="Some Text"/></br>
+		</form>
+	</div>
+	<div>
+		<h1>How to use it?</h1> 
+				
+		<h3>Html</h3>
+		<pre class="brush: xml;">
 			<form id="inputs" >
 				<input id="line-1" name="line-1" type="text" class="checkbox_text left" title="Some Text"/></br>
 				<input id="line-2" name="line-2" type="text" class="checkbox_text left" title="Some Text"/></br>
 				<input id="line-3" name="line-3" type="text" class="checkbox_text left" title="Some Text"/></br>
 			</form>
-        </pre>
-        <pre class="brush: js;">
-        $(function () {
-			var inputsForm = $("#inputs").find("input,textarea");
-			for (var k = 0; k < inputsForm.length; k++) {
-				$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
-			}
-		});
-        </pre>
-    </p>
-	<form id="lines" >
-		<input id="line-1" name="line-1" type="text" class="checkbox_text left" title="Some Text"/></br>
-		<input id="line-2" name="line-2" type="text" class="checkbox_text left" title="Some Text"/></br>
-		<input id="line-3" name="line-3" type="text" class="checkbox_text left" title="Some Text"/></br>
-	</form>
+		</pre>
+
+		<h3>jQuery</h3>
+		<pre class="brush: js;">
+			$(function () {
+				var inputsForm = $("#inputs").find("input,textarea");
+				for (var k = 0; k < inputsForm.length; k++) {
+					$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
+				}
+			});
+		</pre>
+	</div>
 </body>
 </html>

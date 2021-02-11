@@ -8,7 +8,8 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 
 	<script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
-	<script type="text/javascript" src="jquery.dropdownmenu.js"></script>
+	<script type="text/javascript" src="js/jquery.dropdownmenu.js"></script>
+	<script type="text/javascript" src="js/da-drop-down-box.js"></script>
 	
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
@@ -17,34 +18,35 @@
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
-
-	<script type="text/javascript">
-        $(function() {
-            $(".styled").customStyle();
-        });
-    </script>
 </head>
 <body>
 	<h1>Dropdown box</h1>
-    <p>
-        <pre class="brush: xml;">
+
+	<div class="content"> 
+		<select class="styled">
+			<option>One</option>
+			<option>Two</option>
+			<option>Three</option>
+		</select>	
+	</div>
+	<div>
+		<h1>How to use it?</h1> 
+			
+		<h3>Html</h3>
+		<pre class="brush: xml;">
 			<select class="styled_select">
 				<option>One</option>
 				<option>Two</option>
 				<option>Three</option>
 			</select>
         </pre>
+
+		<h3>jQuery</h3>
 		<pre class="brush: js;">
             $(function() {
 				$(".styled_select").customStyle();
 			});
         </pre>
-    </p>
-
-	<select class="styled">
-		<option>One</option>
-		<option>Two</option>
-		<option>Three</option>
-	</select>	
+	</div>
 </body>
 </html>

@@ -3,27 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+    <title>Select multiple</title>
+
     <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="../core/lib/jda-0.1.js"></script>
-    <script type="text/javascript" src="jquery.da_ui.select-multi-buttons.js"></script>
-    <script type="text/javascript" src="jquery.da_ui.select-multi-buttons-menu.js"></script>
-
-    <script type="text/javascript">
-        $(function() {
-            $(".test").selectMultiButtons({
-                html_item: function( name, index, html_data ){
-                    return $("<span class='number'>"+index+"</span>"+html_data);
-                },
-                html_menu: function( menu ){
-                    var html = $("<div class='menu-tests'><div class='t'></div><div class='rep'></div><div class='b'></div></div>");
-                    $(".rep", html).append( menu );
-                    return html;
-                },
-                top_menu: -10,
-                left_menu: 20
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/jquery.da_ui.select-multi-buttons.js"></script>
+    <script type="text/javascript" src="js/jquery.da_ui.select-multi-buttons-menu.js"></script>
+    <script type="text/javascript" src="js/select-multi-buttons.js"></script>
 
     <link type="text/css" rel="stylesheet"  href="style.css">
 
@@ -34,13 +20,21 @@
     <link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
-
-    <title>Select multiple</title>
 </head>
 <body>
     <h1>Select multiple</h1>
 
-    <p>
+    <div class="content">
+        <select name="name" class="test-select" multiple="multiple" initialization='{"selected": ["2","-1","3"]}'>
+            <option value="1">value-1</option>
+            <option value="2">value-2</option>
+            <option value="3">value-3</option>
+        </select>
+    </div>
+    <div>
+        <h1>How to use it?</h1> 
+                
+        <h3>Html</h3>
         <pre class="brush: xml;">
             <select name="name" class="test-select" multiple="multiple" initialization='{"selected": ["2","-1","3"]}'>
                 <option value="1">value-1</option>
@@ -48,6 +42,8 @@
                 <option value="3">value-3</option>
             </select>
         </pre>
+
+        <h3>jQuery</h3>
         <pre class="brush: js;">
             $(function() {
                 $(".test-select").selectMultiButtons({
@@ -64,12 +60,6 @@
                 });
             });
         </pre>
-    </p>
-
-    <select name="name" class="test" multiple="multiple" initialization='{"selected": ["2","-1","3"]}'>
-        <option value="1">value-1</option>
-        <option value="2">value-2</option>
-        <option value="3">value-3</option>
-    </select>
+    </div>
 </body>
 </html>

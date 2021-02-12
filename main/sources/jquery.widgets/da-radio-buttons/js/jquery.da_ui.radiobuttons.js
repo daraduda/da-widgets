@@ -128,7 +128,7 @@
                 $(opt).addClass("da_ui-state-active");
                 this.element.find("option[value='"+ value +"']").attr("selected", "selected");
             } else {
-                $(opt.removeClass("da_ui-state-active"));
+                $(opt).removeClass("da_ui-state-active");
                 this.element.find("option[value='"+ value +"']").removeAttr("selected");
             }
         },

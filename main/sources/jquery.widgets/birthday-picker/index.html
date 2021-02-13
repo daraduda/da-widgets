@@ -4,21 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
-	<script type="text/javascript" src="bday-picker.min.js"></script>
-	<script type="text/javascript" src="jquery.dropdownmenu.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-			$("#datepicker").birthdaypicker({
-				futureDates: true,
-				maxYear: 2020,
-				maxAge: 75,
-				defaultDate: "10-17-1980"
-			});
-			
-			$('select.styled').customStyle();
-        });
-    </script>
+	<script type="text/javascript" src="js/bday-picker.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dropdownmenu.js"></script>
+	<script type="text/javascript" src="js/birthday-picker.js"></script>
 	
     <link type="text/css" rel="stylesheet"  href="style.css">
 
@@ -29,27 +17,37 @@
     <link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
-    <title></title>
+
+    <title>BirthDay DatePicker</title>
 </head>
 <body>
+    <h1>Birthday DatePicker</h1>
 
-    <h1>birthday datepicker</h1>
-    <pre class="brush: xml;">
-		<div class="picker" id="date-picker"></div>
-    </pre>
-    <pre class="brush: js;">
-		$(document).ready(function() {
-			$("#date-picker").birthdaypicker({
-				futureDates: true,
-				maxYear: 2020,
-				maxAge: 75,
-				defaultDate: "10-17-1980"
-			});
-			
-			$('select.styled').customStyle();
-        });
-    </pre>
+	<div class="content"> 
+		<div class="picker" id="datepicker"></div>
+	</div>
 	
-	<div class="picker" id="datepicker"></div>
+	<div>
+		<h1>How to use it?</h1> 
+			
+		<h3>Html</h3>
+		<pre class="brush: xml;">
+			<div class="picker" id="date-picker"></div>
+		</pre>
+
+		<h3>jQuery</h3>
+		<pre class="brush: js;">
+			$(document).ready(function() {
+				$("#date-picker").birthdaypicker({
+					futureDates: true,
+					maxYear: 2020,
+					maxAge: 75,
+					defaultDate: "10-17-1980"
+				});
+				
+				$('select.styled').customStyle();
+			});
+		</pre>
+	</div>	
 </body>
 </html>

@@ -80,3 +80,25 @@ ul.da_ui-select-radio-multi-list {
 .da_ui-select-radio-multi-list li.da_ui-state-hover {
 	background:url("../core/images/checkbox_b_g.png") no-repeat left center;
 }
+
+.step-wrapper {
+    position: relative;
+}
+
+.step {
+    position: absolute;
+    top: 9px;
+    color: #fff;
+}
+
+.step-1 {
+    left: 70px;
+}
+
+.step-2 {
+    left: 290px;
+}
+
+.step-3 {
+    left: 520px;
+}

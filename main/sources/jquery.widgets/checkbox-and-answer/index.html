@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Select multiple to checkbox buttons and answer</title>
+	<title>Select multiple checkbox buttons and answer</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
@@ -9,18 +9,9 @@
 	
     <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="../core/lib/jda-0.1.js"></script>
-    <script type="text/javascript" src="jquery.da_ui.radiobuttons.js"></script>
-	<script type="text/javascript" src="jquery.watermark.min.js"></script>
-
-    <script type="text/javascript">
-        $(function() {
-            $(".test-select-radio[name=test2]").radioButtons({column: 2});
-			var inputsForm = $("#lines").find("input,textarea");
-			for (var k = 0; k < inputsForm.length; k++) {
-				$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
-			}
-        });
-	</script>
+    <script type="text/javascript" src="js/jquery.da_ui.radiobuttons.js"></script>
+	<script type="text/javascript" src="js/jquery.watermark.min.js"></script>
+	<script type="text/javascript" src="js/checkbox-and-answer.js"></script>
 
     <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
     <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
@@ -31,10 +22,11 @@
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
 </head>
 <body>
-    <h1>Select multiple to checkbox buttons and answer</h1>
-    <pre class="brush: xml;">
-		<form id="inputs">
-			<select name="test_multi" class="test-select-radio" multiple="multiple">
+    <h1>Select multiple checkbox buttons and answer</h1>
+
+	<div class="content"> 
+		<form id="lines">
+			<select name="test2" class="test-select-radio" multiple="multiple">
 				<option value="">-----</option>
 				<option value="1" selected="selected">value-1</option>
 				<option value="2">value-2</option>
@@ -42,32 +34,41 @@
 				<option value="4">value-4</option>
 				<option value="5">value-5</option>
 			</select>
+			<div class="clear">&nbsp;</div>
 			<input type="checkbox" name="check" class="checkbox_bg left required" id="check"/>
 			<input type="text" class="checkbox_text left" title="Some Text"/>
 		</form>
-    </pre>
-    <pre class="brush: js;">
-        $(function() {
-            $(".test-select-radio[name=test_multi]").radioButtons({column: 2});
-			var inputsForm = $("#lines").find("input,textarea");
-			for (var k = 0; k < inputsForm.length; k++) {
-				$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
-			}
-        });
-	</pre>
+	</div>
 	
-	<form id="lines">
-		<select name="test2" class="test-select-radio" multiple="multiple">
-			<option value="">-----</option>
-			<option value="1" selected="selected">value-1</option>
-			<option value="2">value-2</option>
-			<option value="3" selected="selected">value-3</option>
-			<option value="4">value-4</option>
-			<option value="5">value-5</option>
-		</select>
-		<div class="clear">&nbsp;</div>
-		<input type="checkbox" name="check" class="checkbox_bg left required" id="check"/>
-		<input type="text" class="checkbox_text left" title="Some Text"/>
-	</form>
+	<div>
+		<h1>How to use it?</h1> 
+			
+		<h3>Html</h3>
+		<pre class="brush: xml;">
+			<form id="inputs">
+				<select name="test_multi" class="test-select-radio" multiple="multiple">
+					<option value="">-----</option>
+					<option value="1" selected="selected">value-1</option>
+					<option value="2">value-2</option>
+					<option value="3" selected="selected">value-3</option>
+					<option value="4">value-4</option>
+					<option value="5">value-5</option>
+				</select>
+				<input type="checkbox" name="check" class="checkbox_bg left required" id="check"/>
+				<input type="text" class="checkbox_text left" title="Some Text"/>
+			</form>
+		</pre>
+
+		<h3>jQuery</h3>
+		<pre class="brush: js;">
+			$(function() {
+				$(".test-select-radio[name=test_multi]").radioButtons({column: 2});
+				var inputsForm = $("#lines").find("input,textarea");
+				for (var k = 0; k < inputsForm.length; k++) {
+					$(inputsForm[k]).watermark($(inputsForm[k]).attr('title'));	
+				}
+			});
+		</pre>
+	</div>
 </body>
 </html>

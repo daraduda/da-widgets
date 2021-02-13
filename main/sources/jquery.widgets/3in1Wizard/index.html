@@ -9,29 +9,8 @@
 	
     <script type="text/javascript" src="../core/lib/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="../core/lib/jda-0.1.js"></script>
-	<script type="text/javascript" src="jda.ui.radiobuttons.js"></script>
-	
-    <script type="text/javascript">
-        $(function() {
-            $(".select-radio[name=test]").radioButtons({});
-            $(".select-radio[name=test3]").radioButtons({});
-            $(".select-radio[name=test2]").radioButtons({column: 2});
-        });
-		$(function() {
-			$(".second").hide();
-			$(".third").hide();
-			$(".first ul.da_ui-select-radio-list li").click(function(){
-				$(this).parent().parent().prev().attr("src", "../core/images/second.png");
-				$(this).parent().hide();
-				$(".second").show();
-			});
-			$(".submit_button").click(function(){
-				$(this).parent().prev().prev().attr("src", "../core/images/third.png");
-				$(this).parent().hide();
-				$(".third").show();
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/jda.ui.radiobuttons.js"></script>
+	<script type="text/javascript" src="js/3-in1-wizard.js"></script>
 	
     <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
     <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
@@ -39,22 +18,30 @@
     <script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
     <link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
-	<script type="text/javascript">SyntaxHighlighter.all();</script>   
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
 </head>
 <body>
-
     <h1>3 in 1 wizard</h1>
-    <pre class="brush: xml;">
+
+	<div class="content">
+		<div class="step-wrapper">
+			<span class="step step-1">Step 1</span>
+			<span class="step step-2">Step 2</span>
+			<span class="step step-3">Step 3</span>
+		</div>
+		
 		<img class="menu" src="../core/images/first.png" alt="" />
-        <div class="one">
-			<select name="test01" class="select-radio">
+	
+		<div class="first">
+			<select name="test" class="select-radio">
 				<option value="">-----</option>
 				<option value="1">value-1</option>
 				<option value="2">value-2</option>
 			</select>
 		</div>
-		<div class="two">
-			<select name="test02" class="select-radio" multiple="multiple">
+		
+		<div class="second">
+			<select name="test2" class="select-radio" multiple="multiple">
 				<option value="">-----</option>
 				<option value="1" selected="selected">value-1</option>
 				<option value="2">value-2</option>
@@ -63,62 +50,84 @@
 				<option value="5">value-5</option>
 			</select>
 			<div class="clear"></div>
-			<a class="submit" href="#" class="left"><img src="../core/images/button_submit.png" alt=""/></a>
+			<a class="submit_button" href="javascript: void(0);" class="left"></a>
 		</div>
-		<div class="three">
-			<select name="test03" class="select-radio">
+		
+		<div class="third">
+			<select name="test3" class="select-radio">
 				<option value="">-----</option>
 				<option value="1">value-1</option>
 				<option value="2">value-2</option>
 			</select>
 		</div>
-    </pre>
-    <pre class="brush: js;">
-        $(".test-select-radio[name=test01]").radioButtons();
-        $(".test-select-radio[name=test03]").radioButtons();
-		$(".test-select-radio[name=test02]").radioButtons({column: 2});
-		$(function() {
-			$(".two").hide();
-			$(".three").hide();
-			$(".one ul.da_ui-select-radio-list li").click(function(){
-				$(this).parent().parent().prev().attr("src", "../core/images/second.png");
-				$(this).parent().hide();
-				$(".two").show();
-			});
-			$(".submit").click(function(){
-				$(this).parent().prev().prev().attr("src", "../core/images/third.png");
-				$(this).parent().hide();
-				$(".three").show();
-			});
-		});
-    </pre>
+	</div>
 	
-	<img class="menu" src="../core/images/first.png" alt="" />
-	<div class="first">
-		<select name="test" class="select-radio">
-			<option value="">-----</option>
-			<option value="1">value-1</option>
-			<option value="2">value-2</option>
-		</select>
-	</div>
-	<div class="second">
-		<select name="test2" class="select-radio" multiple="multiple">
-			<option value="">-----</option>
-			<option value="1" selected="selected">value-1</option>
-			<option value="2">value-2</option>
-			<option value="3" selected="selected">value-3</option>
-			<option value="4">value-4</option>
-			<option value="5">value-5</option>
-		</select>
-		<div class="clear"></div>
-		<a class="submit_button" href="javascript: void(0);" class="left"></a>
-	</div>
-	<div class="third">
-		<select name="test3" class="select-radio">
-			<option value="">-----</option>
-			<option value="1">value-1</option>
-			<option value="2">value-2</option>
-		</select>
+	<div>
+		<h1>How to use it?</h1> 
+				
+		<h3>Html</h3>
+		<pre class="brush: xml;">
+			<div class="step-wrapper">
+				<span class="step step-1">Step 1</span>
+				<span class="step step-2">Step 2</span>
+				<span class="step step-3">Step 3</span>
+			</div>
+			
+			<img class="menu" src="../core/images/first.png" alt="" />
+		
+			<div class="first">
+				<select name="test" class="select-radio">
+					<option value="">-----</option>
+					<option value="1">value-1</option>
+					<option value="2">value-2</option>
+				</select>
+			</div>
+			
+			<div class="second">
+				<select name="test2" class="select-radio" multiple="multiple">
+					<option value="">-----</option>
+					<option value="1" selected="selected">value-1</option>
+					<option value="2">value-2</option>
+					<option value="3" selected="selected">value-3</option>
+					<option value="4">value-4</option>
+					<option value="5">value-5</option>
+				</select>
+				<div class="clear"></div>
+				<a class="submit_button" href="javascript: void(0);" class="left"></a>
+			</div>
+			
+			<div class="third">
+				<select name="test3" class="select-radio">
+					<option value="">-----</option>
+					<option value="1">value-1</option>
+					<option value="2">value-2</option>
+				</select>
+			</div>
+		</pre>
+
+		<h3>jQuery</h3>
+		<pre class="brush: js;">
+			$(function() {
+			    $(".select-radio[name=test]").radioButtons({});
+			    $(".select-radio[name=test3]").radioButtons({});
+			    $(".select-radio[name=test2]").radioButtons({column: 2});
+
+			    $(".second").hide();
+			    $(".third").hide();
+
+			    $(".first ul.da_ui-select-radio-list li").click(function(){
+			        $(this).parent().parent().prev().attr("src", "../core/images/second.png");
+			        $(this).parent().hide();
+			        $(".second").show();
+			    });
+
+			    $(".submit_button").click(function(){
+			        $(this).parent().prev().prev().attr("src", "../core/images/third.png");
+			        $(this).parent().hide();
+			        $(".third").show();
+			    });
+			});
+		</pre>
 	</div>
 </body>
 </html>

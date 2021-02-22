@@ -1,29 +1,96 @@
-﻿/* Prevent the slideshow from flashing on load */
+﻿body {
+  -webkit-font-smoothing: antialiased;
+  font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #232525;
+  padding-top:70px;
+}
+
 #slides {
   display: none
 }
 
-/* Center the slideshow */
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../images/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020
+}
+
+.navbar {
+  overflow: hidden
+}
+
+#slides {
+  display: none
+}
+
 .container {
   margin: 0 auto
 }
 
-/* Show active item in the pagination */
-.slidesjs-pagination .active {
-  color:red;
-}
-
-/* Media quires for a responsive layout */
-
 /* For tablets & smart phones */
 @media (max-width: 767px) {
   body {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .container {
     width: auto
   }
+}
+
+a:link, a:visited {
+  color: #d22929;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* For smartphones */

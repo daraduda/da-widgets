@@ -7,6 +7,7 @@
   	
 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
@@ -18,19 +19,45 @@
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
-	<script type="text/javascript">SyntaxHighlighter.all();</script>	
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
 </head>
 <body>
 	<h1>Photo slider</h1>
 	
 	<div class="container">
 		<div id="slides">
-		<img src="images/example-slide-1.jpg" />
-		<img src="images/example-slide-2.jpg" />
-		<img src="images/example-slide-3.jpg" />
-		<img src="images/example-slide-4.jpg" />
-		<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-      	<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+			<img src="images/example-slide-1.jpg" />
+			<img src="images/example-slide-2.jpg" />
+			<img src="images/example-slide-3.jpg" />
+			<img src="images/example-slide-4.jpg" />
+			<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+	      	<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+      	</div>
 	</div>
+	
+	<h1>How to use it?</h1> 	
+
+	<h3>Html</h3>
+	<pre class="brush: xml;">
+		<div id="slides">
+			<img src="images/example-slide-1.jpg" />
+			<img src="images/example-slide-2.jpg" />
+			<img src="images/example-slide-3.jpg" />
+			<img src="images/example-slide-4.jpg" />
+			<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+	      	<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+		</div>
+	</pre>
+
+	<h3>jQuery</h3>
+	<pre class="brush: js;">
+		$(function() {
+		  $('#slides').slidesjs({
+		    width: 940,
+		    height: 528,
+		    navigation: false
+		  });
+		});
+	</pre>
 </body>
 </html>

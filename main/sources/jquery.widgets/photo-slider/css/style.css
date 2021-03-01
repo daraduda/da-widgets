@@ -2,7 +2,6 @@
   -webkit-font-smoothing: antialiased;
   font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #232525;
-  padding-top:70px;
 }
 
 #slides {
@@ -10,7 +9,7 @@
 }
 
 #slides .slidesjs-navigation {
-  margin-top:3px;
+  margin-top: 3px;
 }
 
 #slides .slidesjs-previous {
@@ -73,7 +72,7 @@
 }
 
 .container {
-  margin: 0 auto
+
 }
 
 /* For tablets & smart phones */

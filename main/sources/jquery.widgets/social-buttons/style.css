@@ -1,4 +1,8 @@
-﻿.extlogin-provider {
+﻿.content {
+	margin: 16px auto 50px auto;
+}
+
+.extlogin-provider {
 	background: url("images/social_buttons.png") no-repeat scroll 0 0 transparent;
 	display: block;
 	float: left;
@@ -18,24 +22,31 @@
 .extlogin-provider.mailru-login {
 	background-position: -25px 0;
 }
+
 .extlogin-provider.lj-login {
 	background-position: -50px 0;
 }
+
 .extlogin-provider.ya-login {
 	background-position: -75px 0;
 }
+
 .extlogin-provider.vk-login {
 	background-position: -100px 0;
 }
+
 .extlogin-provider.tw-login {
 	background-position: -125px 0;
 }
+
 .extlogin-provider.google-login {
 	background-position: -150px 0;
 }
+
 .extlogin-provider.fb-login {
 	background-position: -175px 0;
 }
+
 .extlogin-provider.odnoklassniki-login {
 	background-position: -200px 0;
 }

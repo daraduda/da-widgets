@@ -1,48 +1,52 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<link href="cutext.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
 
-	<script type="text/javascript" src="jquery-1.4.2.min.js" ></script>
-	<script type="text/javascript" src="jScrollPane.js"></script>
-	<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
-	<script type="text/javascript" src="autoresize.jquery.js"></script>
-	<script type="text/javascript" src="cutext.js"></script>
-
-	<script type="text/javascript">
-		$(function() {
-			$('.cuText').cuText({
-				scrollbarWidth : 20,
-				showArrows: true
-			});
-		});
-	</script>
-
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/autoresize.jquery.js"></script>
+	<script type="text/javascript" src="js/cutext.js"></script>
+	<script type="text/javascript" src="js/text-area.js"></script>
+	
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
 	<script type="text/javascript" src="../core/lib/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
 	<link type="text/css" rel="stylesheet" href="../core/lib/syntaxhighlighter_3.0.83/styles/shThemeDefault.css"/>
-	<script type="text/javascript">SyntaxHighlighter.all();</script>
 
 	<title>Text area</title>
 </head>
 <body>
 	<h1>Text area</h1>
-    <p>
-        <pre class="brush: xml;">
-			<textarea class="textarea" rows="" cols=""></textarea>
-        </pre>
-        <pre class="brush: js;">
-            $(function() {
+
+	<div class="content">
+		<textarea class="cuText" rows="" cols=""></textarea>		
+	</div>
+	<br/>
+	<div>
+		<h1>How to use it?</h1> 
+		
+		<h3>Html</h3>		
+		<p>
+			<pre class="brush: xml;">
+				<textarea class="textarea" rows="" cols=""></textarea>
+			</pre>
+		</p>
+		
+		<h3>jQuery</h3>
+		<pre class="brush: js;">
+			$(function() {
 				$('.textarea').cuText({
 					scrollbarWidth : 20,
 					showArrows: true
 				});
 			});
-        </pre>
-	</p>
-	
-	<textarea class="cuText" rows="" cols=""></textarea>
+		</pre>
+	</div>			
 </body>
 </html>
